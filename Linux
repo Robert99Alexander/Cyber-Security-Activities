@@ -1,0 +1,33 @@
+LINUX SYSTEM ADMINISTRATION
+
+Step 1: Ensure/Double Check Permissions on Sensitive Files
+1. ls -l shadow 
+   sudo chmod g-r shadow
+2. ls -l gshadow
+   sudo chmod g-r gshadow
+3. ls -l group 
+   sudo chmod 644 group 
+4. ls -l passwd 
+   sudo chmod 644 passwd 
+
+Step 2: Create User Accounts
+1. sudo adduser admin
+   sudo adduser sam
+   sudo adduser joe 
+   sudo adduser amy 
+   sudo adduser sara
+2. sudo usermod -aG sudo admin
+
+Step 3: Create User Group and Collaborative Folder
+1. sudo addgroup engineers 
+2. sudo usermod -G engineers sam
+   sudo usermod -G engineers joe 
+   sudo usermod -G engineers amy
+   sudo usermod -G engineers sara
+3. sudo mkdir  /home/engineers
+4. sudo chown :engineers /home/engineers
+
+Step 4: Lynis Auditing
+1. sudo apt install lynis 
+2. sudo lynis --help 
+3. sudo lynis audit system
