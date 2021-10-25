@@ -1,4 +1,4 @@
-# Cyber-Security-Ativities
+# Cyber-Security-Activities
 These are just some of the work I have done while studying and learning Cyber Security
 ## Automated ELK Stack Deployment
 
@@ -10,10 +10,13 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 DVWA
 https://github.com/Robert99Alexander/Cyber-Security-Ativities/blob/5731282e9b238021b6af0fe939d696fca8932d3a/Ansible/DVWA-Playbook.PNG
+
 Elk
 https://github.com/Robert99Alexander/Cyber-Security-Ativities/blob/5731282e9b238021b6af0fe939d696fca8932d3a/Ansible/Elk-Playbook
+
 Filebeat
 https://github.com/Robert99Alexander/Cyber-Security-Ativities/blob/5731282e9b238021b6af0fe939d696fca8932d3a/Ansible/Filebeat-Playbook.PNG
+
 Metricbeat
 https://github.com/Robert99Alexander/Cyber-Security-Ativities/blob/5731282e9b238021b6af0fe939d696fca8932d3a/Ansible/Metricbeat-Playbook.PNG
 
