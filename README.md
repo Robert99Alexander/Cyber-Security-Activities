@@ -110,6 +110,6 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the elk-playbook file to /etc/ansible/Install-Elk.yml
-- Update the host file to include the Elk Ip and then add ansible_python_interpreter=/usr/bin/python3 to specify. 
+- Update the host file <nano hosts> to include the Elk Ip and then add ansible_python_interpreter=/usr/bin/python3 to specify. 
 ![project1 elk-host-ansible](https://user-images.githubusercontent.com/87392852/138780234-0a120de7-6592-4112-8c29-f886b9fc6342.PNG)
 - Run the playbook, using command <ansible-playbook Install-Elk.yml> and navigate to kibana to check that the installation worked as expected. You will have to do http://[your-elk-public-IP]:5601/app/kibana to see if the installation worked.
