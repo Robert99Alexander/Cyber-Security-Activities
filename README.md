@@ -4,7 +4,8 @@ These are just some of the work I have done while studying and learning Cyber Se
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
+![Diagram of Cloud Security](https://user-images.githubusercontent.com/87392852/138788711-f061d436-5bf2-45df-94c4-0e3a78236c40.PNG)
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
