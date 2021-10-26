@@ -74,13 +74,12 @@ A summary of the access policies in place can be found in the table below.
 | JumpBox  | No                  | 99.98.178.119        |
 | WEB-1    | No                  | 10.0.0.4             |
 | WEB-2    | No                  | 10.0.0.4             |
-| Elk      | No                  | 10.1.0.4             |
+| Elk      | No                  | 10.0.0.4             |
 
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- What is the main advantage of automating configuration with Ansible?
-Ansible allows us the ability to automate tasks, saving a lot of time. The simplicity of it also helps building an ansible playbook written in YAML, arguably making it a better configuation management tool over other formats like JSON.
+- Ansible allows us the ability to automate tasks, saving a lot of time. The simplicity of it also helps building an ansible playbook written in YAML, arguably making it a better configuation management tool over other formats like JSON.
 
 The playbook implements the following tasks:
 - Install Docker
@@ -114,3 +113,5 @@ SSH into the control node and follow the steps below:
 - Update the host file <nano hosts> to include the Elk Ip and then add ansible_python_interpreter=/usr/bin/python3 to specify. 
 ![project1 elk-host-ansible](https://user-images.githubusercontent.com/87392852/138780234-0a120de7-6592-4112-8c29-f886b9fc6342.PNG)
 - Run the playbook, using command <ansible-playbook Install-Elk.yml> and navigate to kibana to check that the installation worked as expected. You will have to do http://[your-elk-public-IP]:5601/app/kibana to see if the installation worked.
+ ![Project 1 Kibana1](https://user-images.githubusercontent.com/87392852/138789431-241ecc9c-199d-4780-ae2b-049a0352a695.PNG)
+
