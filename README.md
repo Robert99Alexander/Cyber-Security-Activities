@@ -10,16 +10,16 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
 DVWA
-https://github.com/Robert99Alexander/Cyber-Security-Ativities/blob/5731282e9b238021b6af0fe939d696fca8932d3a/Ansible/DVWA-Playbook.PNG
+https://github.com/Robert99Alexander/Cyber-Security-Activities/blob/b9b734dd41710c15e6efbd748d966dd2ead7eecf/Ansible/DVWA-Playbook.PNG
 
 Elk
-https://github.com/Robert99Alexander/Cyber-Security-Ativities/blob/5731282e9b238021b6af0fe939d696fca8932d3a/Ansible/Elk-Playbook
+https://github.com/Robert99Alexander/Cyber-Security-Activities/blob/b9b734dd41710c15e6efbd748d966dd2ead7eecf/Ansible/Elk-Playbook
 
 Filebeat
-https://github.com/Robert99Alexander/Cyber-Security-Ativities/blob/5731282e9b238021b6af0fe939d696fca8932d3a/Ansible/Filebeat-Playbook.PNG
+https://github.com/Robert99Alexander/Cyber-Security-Activities/blob/b9b734dd41710c15e6efbd748d966dd2ead7eecf/Ansible/Filebeat-Playbook.PNG
 
 Metricbeat
-https://github.com/Robert99Alexander/Cyber-Security-Ativities/blob/5731282e9b238021b6af0fe939d696fca8932d3a/Ansible/Metricbeat-Playbook.PNG
+https://github.com/Robert99Alexander/Cyber-Security-Activities/blob/b9b734dd41710c15e6efbd748d966dd2ead7eecf/Ansible/Metricbeat-Playbook.PNG
 
 This document contains the following details:
 - Description of the Topologu
