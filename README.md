@@ -65,7 +65,7 @@ Only the JumpBox machine can accept connections from the Internet. Access to thi
 - 99.98.178.119
 
 Machines within the network can only be accessed by JumpBox Virtual Machine.
-- The machine I allowed accessed to the Elk machine was only the JumpBox machine and the Ip address is 10.0.0.4
+- That being said, the JumpBox machine has the access to the Elk VM. The Ip address of the JumpBox is 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
