@@ -102,8 +102,10 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 Filebeat collects different log data/files, logging info on file system. You will see data collect such as ssh logins and syslog events. 
+![project1 filebeat1](https://user-images.githubusercontent.com/87392852/138789587-3279f6b7-25f7-4387-84d2-35c50294adcc.PNG)
 
 Metricbeat collects statistics of a OS and services on a server, where we can see usage of a webserver at a given time. Such as cpu and memory usage.
+![project1 metricbeat1](https://user-images.githubusercontent.com/87392852/138789595-828049cf-c169-4215-91e7-7aafcfa947eb.PNG)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -112,6 +114,6 @@ SSH into the control node and follow the steps below:
 - Copy the elk-playbook file to /etc/ansible/Install-Elk.yml
 - Update the host file <nano hosts> to include the Elk Ip and then add ansible_python_interpreter=/usr/bin/python3 to specify. 
 ![project1 elk-host-ansible](https://user-images.githubusercontent.com/87392852/138780234-0a120de7-6592-4112-8c29-f886b9fc6342.PNG)
-- Run the playbook, using command <ansible-playbook Install-Elk.yml> and navigate to kibana to check that the installation worked as expected. You will have to do http://[your-elk-public-IP]:5601/app/kibana to see if the installation worked.
+- Run the playbook, using command <ansible-playbook Install-Elk.yml> and navigate to kibana to check that the installation worked as expected. You will have to do http://[your-elk-public-IP]:5601/app/kibana to see if the installation worked. You should see something like this image. 
  ![Project 1 Kibana1](https://user-images.githubusercontent.com/87392852/138789431-241ecc9c-199d-4780-ae2b-049a0352a695.PNG)
 
